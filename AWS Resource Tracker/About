@@ -1,1 +1,7 @@
+The project reports the use of AWS resources evryday at a specific time of a day. 
+This project automates the routine task of engineers, making their workload lighter and lives easier.
+The projected is run from my AWS EC2 instance, which is in stop state by default due to cost reasons.
 
+The project demostrates my basic skills in shell scripting.
+
+The project will be continuously improved and updated while I learn more about it.
