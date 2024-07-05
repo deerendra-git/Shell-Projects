@@ -1,1 +1,7 @@
+This project lists the users with read access to a repository in an organisation. 
+It uses shell scripts and GitHub API to automate this routine task of engineers, which makes their workloads lighter.
+This also helps enhance security to the organisation's repository.
 
+This project demonstrates my skills in shell scripting and API keys.
+
+The code will be continuously updates and improved on further learning.
