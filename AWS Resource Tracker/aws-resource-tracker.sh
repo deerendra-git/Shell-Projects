@@ -32,31 +32,3 @@ aws iam list-users
 
 # display time every time it is logged
 echo "Current date and time: $(date)"
-
-# GitHub update logic
-
-# Variables for GitHub update
-REPO_PATH="/home/ubuntu/Shell-Projects"
-LOG_FILE="/home/ubuntu/Shell-Projects/AWS Resource Tracker/resourceTracker.log"
-COMMIT_MESSAGE="Auto-update log file"
-BRANCH="main"  # Customize: Change this if you use a different branch
-
-# Navigate to the repository
-cd $REPO_PATH
-
-# Check if the log file has changed
-if git diff --exit-code $LOG_FILE > /dev/null; then
-    echo "No changes in log file. Exiting."
-    exit 0
-fi
-
-# Add the log file to the staging area
-git add $LOG_FILE
-
-# Commit the changes
-git commit -m "$COMMIT_MESSAGE"
-
-# Push the changes to the remote repository
-git push origin $BRANCH
-
-echo "Log file updated and changes pushed to GitHub."
